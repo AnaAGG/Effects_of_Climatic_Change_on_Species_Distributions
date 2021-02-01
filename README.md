@@ -5,7 +5,7 @@
 ## Objective and hypothesis
 **Objetive**
 
-Learn to combine multiple tools to get data, from a dataset and APIs. I also 
+Learn to combine multiple tools to get data, from a dataset and APIs. 
         
 **Hypothesis:** 
 
@@ -48,18 +48,15 @@ The GBIF API has a spcific library in python [pygbif](https://pygbif.readthedocs
 
 |        |   |Included species   |   |   |
 |:-----:|:-:|:---:|:---:|:---:|
-|   | *Appus caffer*  |  *Abies pinsapo* |  *Ciconia ciconia* |*Parnasius apollo*   |
-| *Sonchus tenerrimus* | *Lanius minor*  |*Araujia sericiferas*|  |   |  | |  *Calotriton arnoldi* |   |  Abies pinsapo | ugugo  |Parnasius apollo   |
-  | *Silene ciliata*  |*Anas penelope*|  *Grus grus* |  *Vanellus vanellus* |*Cortaderia selloana*|
-  |  |   |  | *Carpobrotus edulis*  | 
-  |  *Apus affinis* |   |   |   |
+|  *Abies pinsapo*  | *Anas penelope*  | *Apus affinis*  | *Araujia sericiferas* |*Carpobrotus edulis* |||*Ciconia ciconia*|*Cortaderia selloana*|   ||  |   ||  |   |  | 
+  | *Calotriton arnoldi*  |*Grus grus*|  *Lanius minor* |  Parnasius apollo* |*Silene ciliata* |
+  | *Sonchus tenerrimus* |  *Vanellus vanellus* |  |  | 
+  |   |   |   |   |
 
 
  ## Main results
 
 In general, in both plants and birds, the results obtained in this approach show that species with warmer affinities have increased their occurrences in recent years. On the other hand, those native species not adapted to rising temperatures have decreased their occurrence. 
-
-
 
 
 ## Libraries
