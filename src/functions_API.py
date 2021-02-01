@@ -30,7 +30,7 @@ def get_taxonomic_info(sp):
     data = occ.search(taxonKey = sp, limit = 300, country = 'ES', year = '2016')
     taxonomic = data["results"] 
     for dictionary in taxonomic:
-        Species = dictionary["scientificName"]
+        species_ = dictionary["scientificName"]
         kingdom = dictionary["kingdom"] 
         genus = dictionary['genus']
         family = dictionary['family']           
@@ -40,7 +40,7 @@ def get_taxonomic_info(sp):
             
         
     
-    species_info = {'species': Species,
+    species_info = {'species': species_,
                     'kingdom': kingdom,
                     'Genus': genus, 
                     'Family': family,
