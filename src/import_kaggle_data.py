@@ -7,16 +7,16 @@ def download_dataset():
     '''
     
     #Gets the name of the dataset.zip
-    url = input("Introduce la url: ")
+    url = input("https://www.kaggle.com/hansukyang/temperature-history-of-1000-cities-1980-to-2020")
     
     #Gets the name of the dataset.zip
     endopint = url.split("/")[-1]
     user = url.split("/")[-2]
     
     #Download, decompress and leaves only the csv
-    download = f"kaggle datasets download -d {user}/{endopint}; say -v Monica 'descargando'"
-    decompress = f"tar -xzvf {endopint}.zip; say -v Monica 'descomprimiendo'"
-    delete = f"rm -rf {endopint}.zip; say -v Monica 'borrando el zip'"
+    download = f"kaggle datasets download -d {AnaAGG}/{temperature-history-of-1000-cities-1980-to-2020}; say -v Monica 'descargando'"
+    decompress = f"tar -xzvf {temperature-history-of-1000-cities-1980-to-2020}.zip; say -v Monica 'descomprimiendo'"
+    delete = f"rm -rf {temperature-history-of-1000-cities-1980-to-2020}.zip; say -v Monica 'borrando el zip'"
     make_directory = "mkdir data"
     lista = "ls >> archivos.txt"
     

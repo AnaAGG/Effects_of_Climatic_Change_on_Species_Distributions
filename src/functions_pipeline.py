@@ -2,27 +2,17 @@ import pandas as pd
 
 def get_header(df, iloc):
     '''
-    Convert given row to column header for Pandas DataFrame
+    Convert given row to column header for Pandas DataFrame and readjust the iloc of the rows
     
     Args:
         data(pd.DataFrame): working dataframe
         iloc(int): the iloc of the column we want to make heading
         
     Return:
-        pd.DataFrame with the new heading determined
+        pd.DataFrame with the new heading determined and the ilocs readjusted
     '''
-    headers = df.iloc[iloc]    
-    return pd.DataFrame(df.values[1:], columns=headers)
-
-
-def get_iloc(df):
-    '''
-    Readjust the iloc of the rows so that they start at 90 and do not repeat any of them
-    Args:
-        df(pd.DataFrame): working dataframe
-    Returns
-        DataFrame with the correct iloc
-    '''
+    headers = df.iloc[iloc] 
+    df = pd.DataFrame(df.values[1:], columns=headers)
     df.columns = df.iloc[0, :]
     return df
 
