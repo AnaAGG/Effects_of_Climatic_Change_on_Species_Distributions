@@ -46,16 +46,19 @@ The GBIF API has a spcific library in python [pygbif](https://pygbif.readthedocs
 
 
 
-|        |   |Studied species   |   |   |
+|        |   |Included species   |   |   |
 |:-----:|:-:|:---:|:---:|:---:|
-| *Apus affinis*  | *Appus caffer*  |  Abies pinsapo |   |*Parnasius_apollo*   |
-| Sonchus tenerrimus | Lanius minor  |Araujia sericiferas|   | Ciconia ciconia  |  Abies pinsapo | *Calotriton arnoldi*|   |   |  Abies pinsapo | ugugo  |Parnasius apollo   |
-  |   |
-   |   |   |
-|   |   |   |   |   |
+|   | *Appus caffer*  |  *Abies pinsapo* |  *Ciconia ciconia* |*Parnasius apollo*   |
+| *Sonchus tenerrimus* | *Lanius minor*  |*Araujia sericiferas*|  |   |  | |  *Calotriton arnoldi* |   |  Abies pinsapo | ugugo  |Parnasius apollo   |
+  | *Silene ciliata*  |*Anas penelope*|  *Grus grus* |  *Vanellus vanellus* |*Cortaderia selloana*|
+  |  |   |  | *Carpobrotus edulis*  | 
+  |  *Apus affinis* |   |   |   |
 
 
  ## Main results
+
+In general, in both plants and birds, the results obtained in this approach show that species with warmer affinities have increased their occurrences in recent years. On the other hand, those native species not adapted to rising temperatures have decreased their occurrence. 
+
 
 
 
