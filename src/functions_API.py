@@ -4,11 +4,29 @@ import requests
 import pandas as pd
 
 def get_species_name_from_codes (splist):
+    '''
+    Receive a list o scientific names to extract the GBIF codes
+    
+    Args:
+        splist(list) the list of target species    
+    
+    Returns
+        Dictionary with thethe scientific name and their GBIF codes.
+    '''
     keys = [species.name_backbone(x)['usageKey'] for x in splist ]
     species_codes = dict(zip(splist, keys))
     return species_codes   
 
 def get_occurences(sp):
+    '''
+    Receive the specific code of each species to extract the occurences by country and year
+    
+    Args:
+        sp(int) the number code of each species    
+    
+    Returns
+        Dictionary with the occurrence information
+    '''
     
     years = range(1970, 2020)
     x = []
@@ -27,6 +45,15 @@ def get_occurences(sp):
     return final
 
 def get_taxonomic_info(sp):
+    '''
+    Receive the specific code of each species to extract the taxonomic infrormation
+    
+    Args:
+        sp(int) the number code of each species    
+    
+    Returns
+        Dictionary with the taxonomic information
+    '''
     data = occ.search(taxonKey = sp, limit = 300, country = 'ES', year = '2016')
     taxonomic = data["results"] 
     for dictionary in taxonomic:
@@ -55,10 +82,10 @@ def join_occurrences_taxonomic(sp):
     Receive taxonomic information dictionary and dictictionry with occurences/year
     
     Args:
-    
+        sp(int) the number code of each species    
     
     Returns
-        jsdf
+        DataFrame with al the taxonomic and occurence data
     '''
     # occurrence dictionary to dataframe
     df_occurrences = pd.DataFrame.from_dict(data = get_occurences(sp),  orient='index').reset_index()
